@@ -30,6 +30,7 @@ We understand how much important and sensitive data can be. We will make sure to
 - HTML, CSS
 - Jinja Templating
 - SQL ALchemy, Sqlite
+- Bootstrap
 
 ## Contributors 
 - [Tanushree Ghai](https://github.com/tanushree-ghai0201)  (Front-end Development)
