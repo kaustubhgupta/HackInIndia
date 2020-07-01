@@ -41,7 +41,7 @@ def mainPart(sent):
         num.append(count)
 
     if (c == [] or max(num) <= 1):
-        return "Did'nt got any pattern!"
+        return "Didn't got any pattern!"
     else:
         maxi = max(num)
         for i in range(len(num)):

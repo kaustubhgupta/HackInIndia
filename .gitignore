@@ -1,3 +1,6 @@
 # not useful pycharm files
 .idea
 __pycache__
+
+#local database not needed in production
+textData.sqlite3
