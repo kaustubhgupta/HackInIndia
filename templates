@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Reminder</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+        <link href="{{ url_for("static",filename="style.css")}}" rel="stylesheet">
+    </head>
+    <body>
+
+            <div class="jumbotron jumbotron-fluid bg-info text-white text-center" style="background-color:#aaa;">
+                <div class="container">
+                     <h1 id="hea">Taskify</h1>
+             <P class="lead py-2">
+         Your Smart Task Reminder
+             </P>
+         </div>
+         </div>
+        </nav>
+        <section>
+            <div>
+
+</div>
+            </div>
+            <form action="\predict" method="post">
+                <div class=" container text-field text-center  py-5 padding">
+                    <input type="text" name="ip" placeholder="your text here"  size="80">
+                    <button type="submit" class="btn-primary">
+                        Set
+                    </button>
+                </div>
+            </form>
+            <div  class ="container" id="prev">
+                <h2 class="display-6 text-center">Past Reminders</h2>
+                <br>
+                {{ output }}
+            </div>
+        </section>
+        <div class="container">
+            <nav class="nav justify-content-center nav-pills flex-column flex-md-row">
+                <a class="nav-link active" href="#" data-toggle="tab">Home </a>
+                <a class="nav-link" href="#about" data-toggle="tab">About </a>
+                <a class="nav-link" href="#join" data-toggle="tab">Join us </a>
+                </nav>
+                <div class="tab-content py-5">
+                    <div class="tab-pane " id ="about">
+                        <h3>About</h3>
+                        <p>
+
+<u><b>Taskify</b></u> is a reminder application that is not your regular application but an ML-based application. In this application, not only you but your friends, family, and colleagues can set alarms, reminders, and tasks on your phone. Just put in your reminder/task in the text field and our application will sort the task according to its urgency level.
+<br> For example, <br>
+1. I need to do this task today only.<br>
+2. I will do this tomorrow.<br>
+Our application will pick up the words (tomorrow,meeting, reminding) and will ask for a confirmation to set a reminder for the meeting.<br>
+The 1st task will be sorted on top and frequent reminders will be given on your email id and notification bar on an android device.
+
+                        </p>
+                    </div>
+                    <div class="tab-pane" id ="join">
+                        <h3>Connect with us</h3>
+                        <p>Coming Soon !</p>
+                    </div>
+
+                </div>
+        </div>
+       <footer>
+        <div class="container-fluid padding">
+            <div class="row text-center padding" id="con">
+                <div class="col-12">
+                    <h3 class="display-4">Connect</h3>
+                    <hr>
+                </div>
+                <div class="col-12 social padding">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+       </footer>
+    </body>
+</html>
